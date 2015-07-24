@@ -15,7 +15,7 @@ public class WebConfig extends WebMvcAutoConfiguration.WebMvcAutoConfigurationAd
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         super.addResourceHandlers(registry);
-        registry.addResourceHandler("/docs/**").addResourceLocations("/swagger-ui/");
+        registry.addResourceHandler("/docs/**").addResourceLocations("classpath:/static/swagger-ui/");
     }
 
 }
